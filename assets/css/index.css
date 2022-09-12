@@ -1,0 +1,61 @@
+.page-header {
+    background: var(--primary-color);
+}
+
+.solution-slide {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-slide h1 {
+    margin-bottom: 30px;
+}
+
+.solution-slide p {
+    margin-bottom: 30px;
+}
+
+.solution-slide h1, p {
+    max-width: 600px;
+}
+
+#nossas_solucoes {
+    background: var(--primary-color);
+}
+
+#nossas_solucoes h1.section-title {
+    font-weight: normal;
+    font-size: 40px;
+    color: white;
+}
+
+#como_funciona {
+    background: #fff;
+}
+
+#temos_solucoes {
+    background: #edf2f7;
+    overflow-x: hidden;
+}
+
+#temos_solucoes_texto {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#temos_solucoes_texto h2,
+#temos_solucoes_texto p {
+    margin-bottom: 30px;
+}
+
+#img_consultas {
+    border-radius: 20px;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.01);
+}
