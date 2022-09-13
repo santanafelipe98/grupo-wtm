@@ -59,3 +59,8 @@
     border-radius: 20px;
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.01);
 }
+
+#mapa iframe {
+    width: 100%;
+    height: 300px;
+}
