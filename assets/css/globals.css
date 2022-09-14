@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #24368c;
-    --secondary-color: #ba2192;
+    --secondary-color: #fde102;
 }
 
 html, body {
@@ -253,6 +253,27 @@ a.btn {
 .solution-header h1 {
     margin-bottom: 20px;
 }
+
+.solution-header p {
+    max-width: 600px;
+}
+
+.service-icon {
+    color: var(--primary-color);
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
 
 footer {
     background: var(--primary-color);

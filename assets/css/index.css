@@ -22,22 +22,6 @@
     max-width: 600px;
 }
 
-.service-icon {
-    color: var(--primary-color);
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-.service-title {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.service-text {
-    font-size: 15px;
-    line-height: 1.8;
-}
-
 #nossas_solucoes {
     background: var(--primary-color);
 }
