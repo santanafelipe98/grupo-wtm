@@ -66,6 +66,9 @@ a {
     padding: 10px 30px;
     border-radius: 100px;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     cursor: pointer;
 }
@@ -123,7 +126,8 @@ a.btn {
 /* Seções */
 
 .page-section {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .section-title {
@@ -238,6 +242,18 @@ a.btn {
     font-weight: bold;
 }
 
+.solution-header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-header h1 {
+    margin-bottom: 20px;
+}
+
 footer {
     background: var(--primary-color);
     min-height: 300px;
@@ -259,4 +275,43 @@ footer {
     color: #fff;
     font-size: 24px;
     display: inline-block;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.border-right {
+    border-right: 1px solid #e1e1e1;
+}
+
+.benefits_list {
+    font-size: 20px;
+    list-style-type: none;
+    color: #fff;
+}
+
+.benefits_list li {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits_list li .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 32px;
+    flex-shrink: 0;
+    background: var(--primary-color);
 }

@@ -1,0 +1,8 @@
+#recuperacao_de_recebiveis_beneficios {
+    background-image: linear-gradient(rgb(33, 37, 41), rgba(33, 37, 41, 0.8) 33%), linear-gradient(transparent 33%, rgb(33, 37, 41) 66%), url("../images/recuperacao_de_recebiveis_indicadores.jpeg");;
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat,no-repeat;
+    background-attachment: scroll,fixed;
+    min-height: 600px;
+}

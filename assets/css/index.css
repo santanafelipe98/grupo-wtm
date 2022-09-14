@@ -22,6 +22,22 @@
     max-width: 600px;
 }
 
+.service-icon {
+    color: var(--primary-color);
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
 #nossas_solucoes {
     background: var(--primary-color);
 }
@@ -58,6 +74,34 @@
 #img_consultas {
     border-radius: 20px;
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.01);
+}
+
+.big-number {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.box {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+
+#indicadores {
+    background-image: url("../images/indicadores.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat,no-repeat;
+    background-attachment: scroll,fixed;
+}
+
+#lista_indicadores {
+    list-style-type: none;
+}
+
+#lista_indicadores {
+    font-size: 32px;
 }
 
 #mapa iframe {
