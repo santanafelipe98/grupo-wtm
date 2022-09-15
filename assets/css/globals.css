@@ -132,7 +132,7 @@ a.btn {
 
 .section-title {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 36px;
     margin-bottom: 30px;
     color: #000;
     text-align: center;
@@ -334,5 +334,33 @@ footer {
     color: #fff;
     font-size: 32px;
     flex-shrink: 0;
+    background: var(--primary-color);
+}
+
+.items-list {
+    list-style-type: none;
+}
+
+.items-list li {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.items-list-lt li {
+    border-left: 4px solid var(--primary-color);
+    transition: transform .3s ease;
+}
+
+.items-list-lt li:hover {
+    transform: translateX(10px);
+}
+
+
+.circle {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 500px;
     background: var(--primary-color);
 }

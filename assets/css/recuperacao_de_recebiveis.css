@@ -17,8 +17,25 @@
 
 #img_carta_notificacao {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #img_carta_notificacao img {
     width: 100%;
+    margin-left: -120px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+}
+
+#observacoes {
+    position: relative;
+    overflow: hidden;
+}
+
+#observacoes .circle {
+    position: absolute;
+    right: -500px;
+    bottom: -500px;
+    z-index: -1;
 }
