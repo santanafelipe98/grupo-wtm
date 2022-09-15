@@ -276,6 +276,82 @@ a.btn {
 }
 
 
+/* Section Scroller */
+
+.section-scroller {
+    position: fixed;
+    top: calc(50% - 125px);
+    right: 20px;
+    z-index: 100;
+    display: flex;
+}
+
+.section-scroller .scrollbar {
+    width: 6px;
+    height: 250px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-scroller .scrollbar .progress {
+    width: 6px;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    transition: height .3s ease;
+}
+
+.section-scroller .section-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+    transition: transform .3s ease;
+}
+
+.section-scroller:hover .section-nav .section-nav-link {
+    max-width: 300px;
+}
+
+
+.section-scroller .section-nav .section-nav-link {
+    max-width: 25px;
+    overflow: hidden;
+    height: 25px;
+    border-radius: 12.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-right: 5px;
+    font-size: .7rem;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    transition: max-width .3s ease-in-out, background .3s ease, transform .3s ease;
+}
+
+.section-scroller .section-nav .section-nav-link .icon {
+    display: inline-flex;
+    height: 100%;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.section-scroller .section-nav .section-nav-link:hover {
+    transform: translateX(-5px);
+    background: var(--primary-color);
+}
+
+.section-scroller .section-nav .section-nav-link.active {
+    background: var(--primary-color);
+}
+
+
 footer {
     background: var(--primary-color);
     min-height: 300px;
