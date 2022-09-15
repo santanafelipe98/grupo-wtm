@@ -92,3 +92,47 @@
     width: 100%;
     height: 300px;
 }
+
+.splide {
+    padding: 0 !important;
+}
+
+#slide_inicial {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/inicial.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_analise_credito {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/analise_de_credito.jpeg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_recuperacao_recebiveis {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/recuperacao_de_recebiveis.jpeg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_consulta_veicular {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/consulta_veicular.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
+
+#slide_cobranca_eletronica {
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/cobranca_eletronica.jpg");
+    background-position: 0 0,50% 50%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+}
