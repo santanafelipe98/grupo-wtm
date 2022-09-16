@@ -1,0 +1,103 @@
+.plan-card {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .01);
+}
+
+.plan-card-header {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+}
+
+.plan-card-content-top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.plan-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background: #f7fafc;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.plan-price {
+    color: var(--primary-color);
+}
+
+.plan-title, .plan-price {
+    font-weight: bold;
+}
+
+.plan-description {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.plan-card .btn {
+    width: 100%;
+}
+
+#plano_basico .plan-price,
+#plano_basico .plan-icon,
+#plano_basico .plan-description,
+#plano_basico .card-item-description  {
+    color: var(--danger-color);
+}
+
+#plano_intermediario .plan-price,
+#plano_intermediario .plan-icon,
+#plano_intermediario .plan-description,
+#plano_intermediario .card-item-description  {
+    color: var(--warning-color);
+}
+
+#plano_profissional .plan-price,
+#plano_profissional .plan-icon,
+#plano_profissional .plan-description,
+#plano_profissional .card-item-description  {
+    color: var(--success-color);
+}
+
+#plano_personalizado .plan-icon {
+    color: var(--info-color);
+}
+
+.card-items, .card-items-subitems {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.card-items li {
+    margin-bottom: 10px;
+}
+
+.card-items li > .card-items-subitems li {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.card-item-description {
+    font-weight: bold;
+    color: var(--primary-color);
+}

@@ -3,6 +3,10 @@
 :root {
     --primary-color: #24368c;
     --secondary-color: #fde102;
+    --danger-color: #ff4444;
+    --warning-color: #ffbb33;
+    --success-color: #00C851;
+    --info-color: #33b5e5;
 }
 
 html, body {
@@ -89,6 +93,26 @@ a.btn {
 .btn-secondary {
     color: #fff;
     background: var(--secondary-color);
+}
+
+.btn-danger {
+    color: #fff;
+    background: var(--danger-color);
+}
+
+.btn-success {
+    color: #fff;
+    background: var(--success-color);
+}
+
+.btn-warning {
+    color: #fff;
+    background: var(--warning-color);
+}
+
+.btn-info {
+    color: #fff;
+    background: var(--info-color);
 }
 
 .btn-lg {
@@ -377,6 +401,26 @@ footer {
 
 .text-primary {
     color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.text-success {
+    color: var(--success-color) !important;
+}
+
+.text-danger {
+    color: var(--danger-color) !important;
+}
+
+.text-warning {
+    color: var(--warning-color) !important;
+}
+
+.text-info {
+    color: var(--info-color) !important;
 }
 
 .text-secondary {
