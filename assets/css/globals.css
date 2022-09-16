@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary-color: #24368c;
@@ -478,6 +478,12 @@ footer {
     transform: translateX(10px);
 }
 
+.box {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
 
 .circle {
     width: 1000px;
