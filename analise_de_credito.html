@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./assets/css/splide-sea-green.min.css">
         <link rel="stylesheet" href="./assets/css/aos.css">
         <link rel="stylesheet" href="./assets/css/globals.css">
+        <link rel="stylesheet" href="./assets/css/micromodal.min.css">
         <link rel="stylesheet" href="./assets/css/analise_de_credito.css">
 
         <title>Grupo WTM - Análise de Crédito</title>
@@ -22,7 +23,7 @@
                 </a>
                 <nav class="navbar-nav">
                     <a href="/" class="nav-link active">Home</a>
-                    <a href="#" class="nav-link">Soluções</a>
+                    <a href="./index.html#nossas_solucoes" class="nav-link">Soluções</a>
                     <a href="./planos.html" class="nav-link">Planos</a>
                     <a href="./contato.html" class="nav-link">Contato</a>
                 </nav>
@@ -47,16 +48,16 @@
                 <div class="container">
 
                     <div class="row justify-content-center">
-                        <div class="col-lg-3">
-                            <div class="person-type-card box">
+                        <div class="col-lg-4">
+                            <div class="person-type-card box" data-target="#consultas_pf">
                                 <img src="./assets/images/document.svg" alt="CPF" class="person-type-icon">
                                 <div class="person-type-title">
                                     CPF
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="person-type-card box">
+                        <div class="col-lg-4">
+                            <div class="person-type-card box" data-target="#consultas_pj">
                                 <img src="./assets/images/document.svg" alt="CPF" class="person-type-icon">
                                 <div class="person-type-title">
                                     CNPJ
@@ -68,8 +69,91 @@
                 </div>
             </section>
 
-            <section id="consultas" class="page-section">
+            <section id="consultas_pf" class="queries page-section hidden"> <!-- Consultas PF -->
                 <div class="section-title text-white">Consultas PF</div>
+
+                <div class="container-fluid">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-2">
+                            <div class="query-card">
+                                <div class="query-card-header">
+                                    <div class="query-title">Crednet Light PF</div>
+                                </div>
+                                <div class="query-card-body">
+                                    <div class="query-icon">
+                                        <img src="./assets/images/crednet_light.png" alt="Crednet" srcset="">
+                                    </div>
+                                    <button class="btn btn-success" data-micromodal-trigger="modal_crednet_light_pf">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="query-card">
+                                <div class="query-card-header">
+                                    <div class="query-title">Crednet TOP PF</div>
+                                </div>
+                                <div class="query-card-body">
+                                    <div class="query-icon">
+                                        <img src="./assets/images/crednet.png" alt="Crednet" srcset="">
+                                    </div>
+                                    <button href="#" class="btn btn-success" data-micromodal-trigger="modal_crednet_top_pf">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="query-card">
+                                <div class="query-card-header">
+                                    <div class="query-title">Achei-recheque PF</div>
+                                </div>
+                                <div class="query-card-body">
+                                    <div class="query-icon">
+                                        <img src="./assets/images/achei_recheque.png" alt="Crednet" srcset="">
+                                    </div>
+                                    <button href="#" class="btn btn-success" data-micromodal-trigger="modal_achei_recheque_pf">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="query-card">
+                                <div class="query-card-header">
+                                    <div class="query-title">Concentre PF - Top Score</div>
+                                </div>
+                                <div class="query-card-body">
+                                    <div class="query-icon">
+                                        <img src="./assets/images/concentre.png" alt="Crednet" srcset="">
+                                    </div>
+                                    <button href="#" class="btn btn-success" data-micromodal-trigger="modal_concentre_pf">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="query-card">
+                                <div class="query-card-header">
+                                    <div class="query-title">Credit Rating</div>
+                                </div>
+                                <div class="query-card-body">
+                                    <div class="query-icon">
+                                        <img src="./assets/images/credit_rating.png" alt="Crednet" srcset="">
+                                    </div>
+                                    <button href="#" class="btn btn-success" data-micromodal-trigger="modal_credit_rating_pf">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <section id="consultas_pj" class="queries page-section hidden">
+                <div class="section-title text-white">Consultas PJ</div>
 
                 <div class="container-fluid">
 
@@ -84,7 +168,7 @@
                                     <div class="query-icon">
                                         <img src="./assets/images/crednet_light.png" alt="Crednet" srcset="">
                                     </div>
-                                    <a href="#" class="btn btn-success">Saiba mais</a>
+                                    <button data-micromodal-trigger="modal_crednet_light_pj" class="btn btn-success">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +182,7 @@
                                     <div class="query-icon">
                                         <img src="./assets/images/crednet.png" alt="Crednet" srcset="">
                                     </div>
-                                    <a href="#" class="btn btn-success">Saiba mais</a>
+                                    <button data-micromodal-trigger="modal_crednet_top_pj" class="btn btn-success">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +196,7 @@
                                     <div class="query-icon">
                                         <img src="./assets/images/achei_recheque.png" alt="Crednet" srcset="">
                                     </div>
-                                    <a href="#" class="btn btn-success">Saiba mais</a>
+                                    <button data-micromodal-trigger="modal_achei_recheque_pj" class="btn btn-success">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
@@ -120,13 +204,13 @@
                         <div class="col-lg-2">
                             <div class="query-card">
                                 <div class="query-card-header">
-                                    <div class="query-title">Concentre PF</div>
+                                    <div class="query-title">Concentre</div>
                                 </div>
                                 <div class="query-card-body">
                                     <div class="query-icon">
                                         <img src="./assets/images/concentre.png" alt="Crednet" srcset="">
                                     </div>
-                                    <a href="#" class="btn btn-success">Saiba mais</a>
+                                    <button data-micromodal-trigger="modal_concentre_pj" class="btn btn-success">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +224,7 @@
                                     <div class="query-icon">
                                         <img src="./assets/images/credit_rating.png" alt="Crednet" srcset="">
                                     </div>
-                                    <a href="#" class="btn btn-success">Saiba mais</a>
+                                    <button data-micromodal-trigger="modal_credit_rating" class="btn btn-success">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
@@ -150,6 +234,454 @@
                 </div>
 
             </section>
+
+            <section  id="analise_de_credito_beneficios" class="page-section">
+                <div class="container">
+                    <h1 class="section-title text-end">Por que realizar a análise de crédito?</h1>
+
+                    <ul class="check-list text-end">
+                        <li class="check-list-item">
+                            Mais segurança para a sua empresa. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+
+                        <li class="check-list-item">
+                            Visibilidade dos riscos. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+
+                        <li class="check-list-item">
+                            Prevenção da inadimplência. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+
+                        <li class="check-list-item">
+                            Equilíbrio financeiro. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+                        
+                        <li class="check-list-item">
+                            Proteção das finanças do cliente. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+
+                        <li class="check-list-item">
+                            Garantia de fluxo de caixa estável. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+
+                        <li class="check-list-item">
+                            Melhora a aquisição e o relacionamento com os clientes. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+
+                        <li class="check-list-item">
+                            Redução do tempo de resposta do cliente. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+
+                        <li class="check-list-item">
+                            Solução adequada a LGPD. <span class="check-list-check"><i class="fas fa-check-circle"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- Consultas PF -->
+
+            <div class="query-modal modal micromodal-slide" id="modal_crednet_light_pf" aria-hidden="true"> <!-- Crednet Light PF  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/crednet_light.png" alt="Crednet Light">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Crednet Light PF
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Negativação Serasa Experian (Pefin/Refin).</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Protestos Estaduais.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Alto volume de consultas em busca de crédito.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Situação do documento CPF.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Anotações de inadimplência.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Consultas à Serasa.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Documento, nome ou razão social e data de fundação ou nascimento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
+            <div class="query-modal modal micromodal-slide" id="modal_crednet_top_pf" aria-hidden="true"> <!-- Crednet TOP PF  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/crednet.png" alt="Crednet TOP PF">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Crednet TOP PF
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques roubados, sustados, cancelados ou extraviados.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Quantidade de consultas relativas a cada <strong>CPF</strong> indicado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos cadastrados pelo varejo.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Informações cadastrais do emitente de cheques sem fundos.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Endereço e telefone relativos ao documento consultado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Documentos roubados ou extraviados que foram registrados pelo próprio consumidor.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Nome do titular do <strong>CPF</strong> e situação do documento.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Situação do documento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
+            <div class="query-modal modal micromodal-slide" id="modal_achei_recheque_pf" aria-hidden="true"> <!-- Achei-recheque PF  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/achei_recheque.png" alt="Crednet Achei-recheque PF">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Achei-recheque PF
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques roubados, sustados, cancelados ou extraviados.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Quantidade de consultas relativas a cada <strong>CNPJ</strong> indicado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos cadastrados pelo varejo.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Informações cadastrais do emitente de cheques sem fundos.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Endereço e telefone relativos ao documento consultado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Documentos roubados ou extraviados que foram registrados pelo próprio consumidor.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Nome do titular do <strong>CNPJ</strong> e situação do documento.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Situação do documento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
+            <div class="query-modal modal micromodal-slide" id="modal_concentre_pf" aria-hidden="true"> <!-- Concentre PF  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/concentre.png" alt="Crednet Concentre PF">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Concentre PF - Top Score
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Existência ou não de protestos nacionais.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Pendências financeiras.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Dívidas vencidas.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Ações judiciais <small>(executivas, de busca e apreensão e de execução fiscal da Justiça Federal, Estadual e Municipal)</small>.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Score de Crédito.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Participação societária.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Redução do índice de inadimplência.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Prevenção contra fraudes.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Decisões mais assertivas com base em dados.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Maior eficácia e segurança nos processos de venda e concessão de crédito.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Maior número de informações para conhecer melhor o seu cliente.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="query-modal modal micromodal-slide" id="modal_credit_rating_pf" aria-hidden="true"> <!-- Credit Rating PF -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/credit_rating.png" alt="Crednet Rating PF">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Credit Rating
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Classificação de risco de crédito.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Análise completa da saúde financeira.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Aspectos comportamentais.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Consultas PJ  -->
+
+            <div class="query-modal modal micromodal-slide" id="modal_crednet_light_pj" aria-hidden="true"> <!-- Crednet Light PJ  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/crednet_light.png" alt="Crednet Light PJ">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Crednet Light PJ
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Negativação Serasa Experian (Pefin/Refin).</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Protestos Estaduais.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Alto volume de consultas em busca de crédito.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Situação do documento <strong>CNPJ</strong>.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Anotações de inadimplência.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Consultas à Serasa.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Documento, nome ou razão social e data de fundação ou nascimento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
+            <div class="query-modal modal micromodal-slide" id="modal_crednet_top_pj" aria-hidden="true"> <!-- Crednet TOP PJ  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/crednet.png" alt="Crednet TOP PF">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Crednet TOP PJ
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques roubados, sustados, cancelados ou extraviados.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Quantidade de consultas relativas a cada <strong>CPF</strong> indicado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos cadastrados pelo varejo.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Informações cadastrais do emitente de cheques sem fundos.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Endereço e telefone relativos ao documento consultado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Documentos roubados ou extraviados que foram registrados pelo próprio consumidor.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Nome do titular do <strong>CPF</strong> e situação do documento.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Situação do documento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
+            <div class="query-modal modal micromodal-slide" id="modal_achei_recheque_pj" aria-hidden="true"> <!-- Achei-recheque PJ  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/achei_recheque.png" alt="Crednet Achei-recheque PJ">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Achei-recheque PJ
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques roubados, sustados, cancelados ou extraviados.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Quantidade de consultas relativas a cada <strong>CPF</strong> indicado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos cadastrados pelo varejo.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Informações cadastrais do emitente de cheques sem fundos.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Endereço e telefone relativos ao documento consultado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Documentos roubados ou extraviados que foram registrados pelo próprio consumidor.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Nome do titular do <strong>CPF</strong> e situação do documento.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Situação do documento.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
+            <div class="query-modal modal micromodal-slide" id="modal_concentre_pj" aria-hidden="true"> <!-- Concentre PJ  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/concentre.png" alt="Crednet Concentre PJ">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Concentre PJ - Top Score
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Existência ou não de protestos nacionais.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Pendências financeiras.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cheques sem fundos.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Dívidas vencidas.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Ações judiciais <small>(executivas, de busca e apreensão e de execução fiscal da Justiça Federal, Estadual e Municipal)</small>.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Score de Crédito.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Participação societária.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Redução do índice de inadimplência.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Prevenção contra fraudes.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Decisões mais assertivas com base em dados.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Maior eficácia e segurança nos processos de venda e concessão de crédito.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Maior número de informações para conhecer melhor o seu cliente.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="query-modal modal micromodal-slide" id="modal_credit_rating" aria-hidden="true"> <!-- Credit Rating -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/credit_rating.png" alt="Crednet Rating">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Credit Rating
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Classificação de risco de crédito.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Análise completa da saúde financeira.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Aspectos comportamentais.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
         </main>
         <footer>
             <div class="container">
@@ -199,9 +731,12 @@
             <div class="scrollbar"></div>
         </div>
         <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/micromodal.min.js"></script>
         <script src="./assets/js/aos.js"></script>
+        <script src="./assets/js/analise_de_credito.js"></script>
         <script>
             AOS.init();
+            MicroModal.init()
         </script>
     </body>
 </html>

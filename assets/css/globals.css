@@ -491,3 +491,48 @@ footer {
     border-radius: 500px;
     background: var(--primary-color);
 }
+
+.hidden {
+    display: none;
+}
+
+.query-modal-icon img {
+    height: 40px;
+}
+
+.query-modal-items {
+    list-style-type: none;
+}
+
+.query-modal-items li {
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.query-modal-items li i {
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 9px);
+    font-size: 18px;
+    color: var(--success-color);
+}
+
+.check-list {
+    list-style-type: none;
+}
+
+.check-list .check-list-item {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.check-list-check {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 20px;
+    color: var(--primary-color);
+}
