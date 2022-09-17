@@ -1,7 +1,22 @@
 #consulta_veicular_page_header {
-    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/consulta_veicular.jpg");
+    background-image: linear-gradient(180deg,rgba(44,44,49,0),#212529 95%),linear-gradient(180deg,rgba(48,48,64,.3),rgba(48,48,64,.3)),linear-gradient(0deg,rgba(52,58,64,.4),rgba(0,151,216,.4)), url("../images/consulta_veicular.jpg");
     background-position: 0 0,50% 50%;
     background-size: cover;
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, fixed;
+}
+
+#consultas {
+    background-image: linear-gradient(180deg,#212529,rgba(33,37,41,.8) 33%),linear-gradient(180deg,transparent 33%,#212529 66%),url("../images/consulta_veicular_consultas.jpg");
+    background-position: 0 0,0 0,50% 50%;
+    background-attachment: scroll,scroll,fixed;
+}
+
+#consultas .query-card {
+    min-height: 300px;
+    margin-bottom: 50px;
+}
+
+#consultas .query-icon {
+    min-height: auto;
 }

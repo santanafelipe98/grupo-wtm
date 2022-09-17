@@ -504,7 +504,7 @@ footer {
     list-style-type: none;
 }
 
-.query-modal-items li {
+.query-modal-items > li {
     padding: 10px;
     padding-left: 40px;
     border: 1px solid #e1e1e1;
@@ -514,13 +514,17 @@ footer {
     transition: transform .3s ease;
 }
 
-.query-modal-items li:hover {
+.query-modal-items > li li {
+    margin-left: 50px;
+}
+
+.query-modal-items > li:hover {
     transform: translateX(10px);
 }
 
 
 
-.query-modal-items li i {
+.query-modal-items > li i {
     position: absolute;
     left: 10px;
     top: calc(50% - 9px);
@@ -548,4 +552,58 @@ footer {
     display: inline-block;
     margin-left: 20px;
     color: var(--primary-color);
+}
+
+.query-card {
+    overflow: hidden;
+    border: 4px solid transparent;
+    transition: transform .3s ease, border ;
+    padding: 20px 10px;
+    border-radius: 20px;
+    background: var(--primary-color);
+    min-height: 500px;
+    position: relative;
+}
+
+.query-card:hover {
+    border-color: var(--success-color);
+}
+
+.query-card:hover {
+    transform: translateY(-10px);
+}
+
+.query-card-header {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.query-icon {
+    margin: 10px 0;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.query-icon img {
+    width: 100px;
+}
+
+.query-card-body {
+    background: var(--primary-color);
+}
+
+.query-card-body .btn {
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: 20px;
+}
+
+.query-title {
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
 }
