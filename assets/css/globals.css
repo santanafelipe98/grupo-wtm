@@ -511,7 +511,14 @@ footer {
     border-radius: 5px;
     position: relative;
     margin-bottom: 10px;
+    transition: transform .3s ease;
 }
+
+.query-modal-items li:hover {
+    transform: translateX(10px);
+}
+
+
 
 .query-modal-items li i {
     position: absolute;
@@ -529,6 +536,12 @@ footer {
     align-items: center;
     margin-bottom: 20px;
 }
+
+.check-list .check-list-item:hover {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 
 .check-list-check {
     font-size: 18px;

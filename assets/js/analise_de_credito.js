@@ -7,5 +7,8 @@ $(document).ready(function () {
         })
 
         target.removeClass('hidden')
+        const top = target.offset().top
+
+        window.scrollTo({ top, behavior: 'smooth'  })
     })
 })
