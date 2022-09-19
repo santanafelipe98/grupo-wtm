@@ -27,20 +27,252 @@
                     <a href="./contato.html" class="nav-link">Contato</a>
                 </nav>
                 <div class="side-buttons">
-                    <a href="#" class="btn btn-info me-2">Solicitar Contato</a>
+                    <a href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Solicitar Contato</a>
                     <a href="#" class="btn btn-secondary">Entrar</a>
                 </div>
             </div>
         </header>
         <main>
             <section id="cobranca_eletronica_page_header" class="page-header solution-header">
-                <h1 class="heading-lg text-white text-center">Cobrança Eletrônica</h1>
+                <h1 class="heading-lg text-white text-center" data-aos="fade-up">Cobrança Eletrônica</h1>
 
-                <p class="text-white text-center">
+                <p class="text-white text-center" data-aos="fade-up" data-aos-delay="300">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cumque quae rerum in maxime facere labore atque quod voluptatum.
                 </p>
             </section>
+
+            <section class="page-section">
+
+                <div class="container">
+                    <h1 class="section-title">Poupe seu ativo mais valioso: o tempo</h1>
+                    <p class="text-center text-gray">Nossa tecnologia é simples e eficaz, com ela, você realiza cobranças 24h por dia de onde estiver.</p>
+
+                    <nav class="tabs mt-5">
+                        <a href="#" class="tab active"><span class="tab-icon"><i class="fa-regular fa-file-lines"></i></span> Protesto</a>
+                        <a href="#" class="tab"><span class="tab-icon"><i class="fa-solid fa-hand-holding-dollar"></i></span> Régua de Cobrança</a>
+                        <a href="#" class="tab"><span class="tab-icon"><i class="fa-solid fa-ban"></i></span> Negativação</a>
+                    </nav>
+                    <div class="tab-wrapper">
+                        <div id="tab_protesto" class="row tab-view">
+                            <div class="col-lg-6 img-wrapper">
+                                <img src="./assets/images/banner-tabs-protesto.png" alt="Protesto">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="heading-md mb-3">Proteste seu cliente de forma simplificada</h2>
+
+                                <p class="text-gray">O Régua tem integração com dezenas de cartórios espalhados pelo Brasil. Com essa funcionalidade, você pode protestar seu cliente em poucos cliques. Basta ativar a funcionalidade dentro da ferramenta e começar a utilizar.</p>
+                            
+                                <div class="tab-item">
+                                    <div class="tab-item-icon">
+                                        <i class="fa-solid fa-hourglass-start"></i>
+                                    </div>
+                                    <div class="tab-item-text">
+                                        <h3 class="tab-item-title">Aumente suas chances</h3>
+
+                                        <p class="tab-item-description">O Régua promove uma experiência 360º para garantir a recuperação dos seus títulos vencidos. Em uma única tela você consegue controlar os lembretes e negociar o recebimento do boleto em atraso.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tab-item">
+                                    <div class="tab-item-icon">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </div>
+                                    <div class="tab-item-text">
+                                        <h3 class="tab-item-title">Menos trabalho operacional</h3>
+
+                                        <p class="tab-item-description">Com o Régua, sua equipe financeira tem o controle das dívidas de todos os títulos e pode tomar uma decisão de protestar ou não essa em dívida. O mais legal de tudo isso é que a tomada de decisão também está vinculada ao nosso software.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="tab_regua_de_cobranca" class="row tab-view">
+                            <div class="col-lg-6 img-wrapper">
+                                <img src="./assets/images/banner-tabs-regua.png" alt="Régua de Cobrança">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="heading-md mb-3">Controle suas cobranças com poucos cliques</h2>
+
+                                <p class="text-gray">O software promove uma experiência simples e eficaz, com poucos cliques nossos clientes configuram as regras e a partir daí, nossa solução começa a trabalhar por você. A meta é mais dinheiro no seu caixa e menos tempo gasto com cobranças.</p>
+                            
+                                <div class="tab-item">
+                                    <div class="tab-item-icon">
+                                        <i class="fa-regular fa-lightbulb"></i>
+                                    </div>
+                                    <div class="tab-item-text">
+                                        <h3 class="tab-item-title">Inovação</h3>
+
+                                        <p class="tab-item-description">Nós nascemos para facilitar a vida dos nossos clientes e poupar o ativo mais valioso: o tempo. Com nosso software, equipes financeiras controlam cobranças 24h por dia de onde estiver com disparos automatizados de lembretes e agradecimentos. Depois da implantação do Régua de cobrança sua equipe vai ter mais tempo para focar em atividades mais importantes e sua organização vai atingir aproximadamente 30% de redução da sua taxa de inadimplência.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tab-item">
+                                    <div class="tab-item-icon">
+                                        <i class="fa-solid fa-bullseye"></i>
+                                    </div>
+                                    <div class="tab-item-text">
+                                        <h3 class="tab-item-title">Simples e Eficaz</h3>
+
+                                        <p class="tab-item-description">Com poucos cliques nossos clientes configuram regras e a partir daí, nossa solução começa a trabalhar por você. A meta é mais dinheiro no seu caixa e menos tempo gasto com cobrança.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab_negativacao" class="row tab-view">
+                            <div class="col-lg-6 img-wrapper">
+                                <img src="./assets/images/banner-tabs-negativacao.png" alt="Negativação">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="heading-md mb-3">Negative seus clientes em poucos cliques</h2>
+        
+                                <p class="text-gray">Somos distribuidores autorizados SERASA EXPERIAN.
+        
+                                    A Serasa Experian é líder em serviços de informação e responsável pela maior base de dados da América Latina. Com a nossa integração você executa cobranças e recuperação de dívidas em pouco tempo.</p>
+                            
+                                <div class="tab-item">
+                                    <div class="tab-item-icon">
+                                        <i class="fa-solid fa-money-bill-transfer"></i>
+                                    </div>
+                                    <div class="tab-item-text">
+                                        <h3 class="tab-item-title">Cobrança e Recuperação de dívidas</h3>
+        
+                                        <p class="tab-item-description">Otimize a recuperação de suas dívidas com a inclusão de devedores na nossa base de dados e gerencie seus clientes em atraso.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="tab-item">
+                                    <div class="tab-item-icon">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                    </div>
+                                    <div class="tab-item-text">
+                                        <h3 class="tab-item-title">Chega de inadimplências</h3>
+        
+                                        <p class="tab-item-description">Com o Régua e Serasa Experian sua inadimplência está ainda mais distante. Por meio da negativação suas chances de negociação e pagamentos das dívidas aumentam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+                
+            </section>
+
+            <section id="passo_a_passo" class="page-section">
+                <div class="container">
+                    <h1 class="section-title text-center">O Régua começa a trabalhar por você!</h1>
+                    <p class="text-gray mb-4 text-center">Seu departamento financeiro é quem dita as regras nas quais o Régua de Cobrança deve atuar, podendo ser via: email, SMS e WhatsApp.</p>
+                
+                    <div class="row">
+                        <div class="col-lg-4 section-item">
+                            <div class="section-icon">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+
+                            <div class="section-item-content">
+                                <h3 class="section-item-title">Crie uma conta</h3>
+                                <p>Explore todas as nossas funcionalidades e conte com a ajuda do nosso time de consultores de sucesso para se tornar um expert em poucos cliques.</p>
+                                <div class="number">01</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 section-item">
+                            
+                            <div class="section-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+
+                            <div class="section-item-content">
+                                <h3 class="section-item-title">Integre o Régua com seu ERP</h3>
+                                <p>O Régua de Cobrança tem toda documentação da “API” disponível aqui, em nosso site. Nossos consultores técnicos também estão à disposição para auxiliar em todas as dúvidas relacionadas a integração.</p>
+                                <div class="number">02</div>
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-4 section-item">
+                            
+                            <div class="section-icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+
+                            <div class="section-item-content">
+                                <h3 class="section-item-title">Configure suas Réguas de Cobrança</h3>
+                                <p>Nosso software disponibiliza templates de agradecimentos, lembretes e cobranças para que em poucos cliques você possa ter o Régua trabalhando por você. É só configurar as regras e o formato e aguardar os resultados em poucos dias.</p>
+                                <div class="number">03</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="controle_suas_cobrancas" class="page-section">
+                <div class="container d-flex flex-column align-items-center">
+                    <h1 class="heading-xxl mb-4">Controle suas cobranças em um só lugar</h1>
+
+                    <p>O Régua é um software completo que chegou para facilitar a vida de equipes financeiras e gestores financeiros quando o assunto é cobrar clientes.</p>
+                    <p>Além de reduzir sua taxa de inadimplência em até 30%, sua equipe pode ter mais tempo livre para se dedicar a outras atividades que não sejam tão operacionais.</p>
+                
+                    <a href="#" class="btn btn-success">Falar com especialista</a>
+                </div>
+
+                <img id="img_software" src="./assets/images/banner-sofware.png" alt="Sofware">
+            </section>
         </main>
+
+        <div class="modal micromodal-slide" id="contato_form" aria-hidden="true"> <!-- Contato -->
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+              <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="heading-md">Fale conosco</h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nome Completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <select name="" class="form-control">
+                                <option value="">Selecione o seu interesse</option>
+                                <option value="A">Análise de Crédito</option>
+                                <option value="B">Recuperação de Recebíveis</option>
+                                <option value="C">Consulta Veicular</option>
+                                <option value="D">Cobrança Eletrônica</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Celular">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="CNPJ">
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <button type="submit" class="btn btn-primary d-flex w-100">Enviar</button>
+                      </form>
+                    <div class="row">
+                  
+                </main>
+              </div>
+            </div>
+        </div>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -76,10 +308,6 @@
                     <span class="icon"><i class="fas fa-car"></i></span>
                     <span class="title">Consulta Veicular</span>
                 </a>
-                <a href="./cobranca_eletronica.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-file-invoice-dollar"></i></span>
-                    <span class="title">Cobrança Eletrônica</span>
-                </a>
                 <a href="#" class="section-nav-link">
                     <span class="icon"><i class="fas fa-dollar"></i></span>
                     <span class="title">Planos</span>
@@ -89,8 +317,10 @@
         </div>
         <script src="./assets/js/jquery.min.js"></script>
         <script src="./assets/js/aos.js"></script>
+        <script src="./assets/js/consulta_eletronica.js"></script>
         <script>
             AOS.init();
+            MicroModal.init();
         </script>
     </body>
 </html>

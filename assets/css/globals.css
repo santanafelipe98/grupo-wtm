@@ -128,6 +128,10 @@ a.btn {
 
 /* Texto */
 
+.heading-xxl {
+    font-size: 76px;
+}
+
 .heading-xl {
     font-size: 56px;
     font-weight: 700;
@@ -427,6 +431,10 @@ footer {
     color: var(--secondary-color) !important;
 }
 
+.text-gray {
+    color: rgb(64, 87, 93);
+}
+
 .border-right {
     border-right: 1px solid #e1e1e1;
 }
@@ -606,4 +614,102 @@ footer {
     font-weight: 500;
     color: #fff;
     font-size: 20px;
+}
+
+/* Tabs */
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid #efefff;
+}
+
+.tab {
+    padding: 20px 25px;
+    font-size: 16px;
+    color: #9999c0;
+    border-bottom: 2px solid transparent;
+    transition: border-color .3s ease;
+}
+
+.tab-wrapper {
+    overflow: hidden;
+}
+
+.tab-icon {
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.tab.active {
+    border-color: var(--primary-color);
+}
+
+.tab-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.tab-item-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background: #edf2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-right: 20px;
+}
+
+.tab-item-title {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.section-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-item-title {
+    margin-bottom: 20px;
+}
+
+.section-item p {
+    font-size: 16px;
+}
+
+.section-item-content {
+    position: relative;
+}
+
+.section-item .number {
+    font-size: 200px;
+    color: #000;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 100px);
+    z-index: -1;
+}
+
+#contato_form .modal__container {
+    min-width: 600px;
 }
