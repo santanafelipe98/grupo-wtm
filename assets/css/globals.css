@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+.brand img {
+    width: 100px;
+}
+
 .navbar {
     background: var(--primary-color);
 }
@@ -123,7 +127,7 @@ a.btn {
 /* Page header */
 
 .page-header {
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 /* Texto */
@@ -173,6 +177,7 @@ a.btn {
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform .3s ease;
     background: white;
+    position: relative;
 }
 
 .card:hover {
@@ -181,6 +186,8 @@ a.btn {
 
 .card-body {
     padding: 30px;
+    position: relative;
+    min-height: 400px;
 }
 
 .card-title {
@@ -209,6 +216,8 @@ a.btn {
     display: flex;
     margin-top: 50px;
     align-items: center;
+    position: absolute;
+    bottom: 30px;
     color: var(--secondary-color);
     transition: color .3s ease;
 }
@@ -263,12 +272,14 @@ a.btn {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    flex-shrink: 0;
     background: var(--secondary-color);
     color: #fff;
 }
 
 .step-title {
     font-weight: bold;
+    text-align: center;
 }
 
 .solution-header {
@@ -285,6 +296,10 @@ a.btn {
 
 .solution-header p {
     max-width: 600px;
+}
+
+.service {
+    margin-bottom: 30px;
 }
 
 .service-icon {
@@ -382,9 +397,21 @@ a.btn {
 
 footer {
     background: var(--primary-color);
-    min-height: 300px;
+    min-height: 150px;
     display: flex;
     align-items: center;
+}
+
+footer .container .col-lg-3,
+footer .container .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-brand img {
+    width: 150px;
 }
 
 /* Social media */

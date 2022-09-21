@@ -43,15 +43,17 @@
 }
 
 #analise_de_credito_beneficios {
+    background-color: #f1f1f3;
     background-image: url("../images/analise_de_credito_beneficios.jpg");
     background-size: auto 100%;
+    background-position: -20vw 20%;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 700px;
 }
 
 #banner_principal {
-    background-image: linear-gradient(180deg,rgb(25, 39, 46, .8) 59%,var(--primary-color)), url("../images/banner_principal.jpeg");
+    background-image: linear-gradient(180deg,rgb(25, 39, 46, .8) 59%,var(--primary-color)), url("../images/banner_principal.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
