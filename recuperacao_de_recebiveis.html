@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css">
         <link rel="stylesheet" href="./assets/css/micromodal.min.css">
         <link rel="stylesheet" href="./assets/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/css/splide-sea-green.min.css">
         <link rel="stylesheet" href="./assets/css/aos.css">
         <link rel="stylesheet" href="./assets/css/globals.css">
@@ -118,7 +119,7 @@
             </section>
 
 
-            <section class="page-section">
+            <section id="solucoes" class="page-section">
                 <div class="container">
                     <h2 class="heading-md text-center mb-5">
                         Nossas soluções para recuperação de créditos.
@@ -126,26 +127,26 @@
 
                     <div class="row d-flex justify-content-center">
                         
-                        <div class="col-lg-10 box">
+                        <div class="col-lg-10">
                             <div class="row">
 
-                                <div class="col-lg-4 border-right">
-                                    <div class="service">
-                                        <h3 class="service-title text-primary"><i class="fas fa-flag text-secondary d-inline-block me-1"></i> Notificação Extrajudicial</h3>
+                                <div class="col-lg-4">
+                                    <div class="solution-card">
+                                        <h3 class="service-title text-primary">Notificação Extrajudicial</h3>
                                         <p class="service-text">Envio de Notificação extrajudicial via correio.</p>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 border-right">
-                                    <div class="service">
-                                        <h3 class="service-title text-primary"><i class="fas fa-flag text-secondary d-inline-block me-1"></i> Negativação online</h3>
+                                <div class="col-lg-4">
+                                    <div class="solution-card">
+                                        <h3 class="service-title text-primary">Negativação online</h3>
                                         <p class="service-text">Inclusão da dívida na base da Serasa.</p>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4">
-                                    <div class="service">
-                                        <h3 class="service-title text-primary"><i class="fas fa-flag text-secondary d-inline-block me-1"></i> Negativação + Cobrança</h3>
+                                    <div class="solution-card">
+                                        <h3 class="service-title text-primary">Negativação + Cobrança</h3>
                                         <p class="service-text">Sistema de cobrança pode ser entendido como soluções tecnológicas que permite a aplicação de medidas e ações para a recuperação de recebíveis na empresa.</p>
                                     </div>
                                 </div>
@@ -228,46 +229,54 @@
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
               <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header class="modal__header">
-                    <h1 class="heading-md">Fale conosco</h1>
+                    <h1 class="heading-md contact-title">Traga o poder dos dados para a sua empresa e amplie as oportunidades</h1>
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nome Completo">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                            <select name="" class="form-control">
-                                <option value="">Selecione o seu interesse</option>
-                                <option value="A">Análise de Crédito</option>
-                                <option value="B">Recuperação de Recebíveis</option>
-                                <option value="C">Consulta Veicular</option>
-                                <option value="D">Cobrança Eletrônica</option>
-                            </select>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Celular">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="CNPJ">
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <button type="submit" class="btn btn-primary d-flex w-100">Enviar</button>
-                      </form>
+                    <p class="contact-description">Informe seus dados e um de nossos especialistas entrará em contato com você.</p>
                     <div class="row">
-                  
+                        <div id="img_contato_form" class="col-lg-6">
+                            <img src="./assets/images/contato_form.jpg" alt="Formulário de Contato">
+                        </div>
+
+                        <div class="col-lg-6 d-flex flex-column justify-content-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome Completo">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <select name="" class="form-control">
+                                        <option value="">Selecione o seu plano</option>
+                                        <option value="A">Análise de Crédito</option>
+                                        <option value="B">Recuperação de Recebíveis</option>
+                                        <option value="C">Consulta Veicular</option>
+                                        <option value="D">Cobrança Eletrônica</option>
+                                    </select>
+                                </div>
+        
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Celular">
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="CNPJ">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+        
+                                <button type="submit" class="btn btn-primary d-flex w-100">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    
                 </main>
               </div>
             </div>
