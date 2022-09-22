@@ -36,15 +36,15 @@
         </header>
         <main>
             <section class="page-header"> <!-- Nossas soluções -->
-                <div class="splide" aria-label="Slide - Nossas soluções">
+                <div id="header_slide" class="splide" aria-label="Slide - Nossas soluções">
                     <div class="splide__track">
                           <ul class="splide__list">
                               <li class="splide__slide">
                                 <div id="slide_inicial" class="solution-slide">
-                                    <h1 class="heading-lg text-white text-center">WTM cuidando da sua empresa com as melhores soluções financeiras!</h1>
+                                    <h1 class="heading-lg text-white text-center">Possuímos as melhores soluções financeiras!</h1>
 
                                     <p class="text-white text-center">
-                                        As melhores soluções para você realizar negativação e consultar informações Serasa para conceder o crédito certo aos seus clientes.
+                                        Com uma plataforma digital especializada em análise de crédito, consultas veiculares, gestão de recebíveis e cobrança de devedores.
                                     </p>
                                 </div>
                               </li>
@@ -100,7 +100,7 @@
 
             <section class="page-section" id="nossas_solucoes"> <!-- Nossas soluções -->
                 <h1 class="section-title">
-                    Nossas principais <strong>solucoes</strong> para sua empresa.
+                    Nossas principais <strong>soluções</strong>.
                 </h1>
                 <div class="container">
                     <div class="row mt-5">
@@ -195,7 +195,7 @@
                                 <div class="step-body">
                                     <div class="step-number">1</div>
                                     <div class="step-text">
-                                        <div class="step-title">Clique em "Seja Cliente"</div>
+                                        <div class="step-title">Clique em "Seja Cliente".</div>
                                     </div>
                                 </div>
                             </div>
@@ -207,13 +207,13 @@
                             <div class="step"> <!-- Recuperação de Recebíveis -->
                                 <div class="step-header">
                                     <div class="step-thumbnail">
-                                        <img src="./assets/images/passo_1.png" alt="Passo 1">
+                                        <img src="./assets/images/passo_1.png" alt="Passo 2">
                                     </div>
                                 </div>
                                 <div class="step-body">
                                     <div class="step-number">2</div>
                                     <div class="step-text">
-                                        <div class="step-title">Cadastre os dados da sua empresa</div>
+                                        <div class="step-title">Cadastre os dados da sua empresa.</div>
                                     </div>
                                 </div>
                             </div>
@@ -225,13 +225,13 @@
                             <div class="step"> <!-- Análise de Crédito -->
                                 <div class="step-header">
                                     <div class="step-thumbnail">
-                                        <img src="./assets/images/passo_1.png" alt="Passo 1">
+                                        <img src="./assets/images/passo_1.png" alt="Passo 3">
                                     </div>
                                 </div>
                                 <div class="step-body">
                                     <div class="step-number">3</div>
                                     <div class="step-text">
-                                        <div class="step-title">Um especialista entrará em contato</div>
+                                        <div class="step-title">Um especialista entrará em contato.</div>
                                     </div>
                                 </div>
                             </div>
@@ -243,13 +243,13 @@
                             <div class="step"> <!-- Análise de Crédito -->
                                 <div class="step-header">
                                     <div class="step-thumbnail">
-                                        <img src="./assets/images/passo_1.png" alt="Passo 1">
+                                        <img src="./assets/images/passo_1.png" alt="Passo 4">
                                     </div>
                                 </div>
                                 <div class="step-body">
                                     <div class="step-number">4</div>
                                     <div class="step-text">
-                                        <div class="step-title">4- Seu cadastro já será liberado</div>
+                                        <div class="step-title">Seu cadastro já será liberado.</div>
                                     </div>
                                 </div>
                             </div>
@@ -332,6 +332,30 @@
                             data-aos-delay="300"
                             data-aos-duration="1000">
                             <img id="img_consultas" src="./assets/images/consultas.jpeg" alt="Consultas">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nossos_clientes" class="page-section">
+                <h1 class="section-title">Nossos valiosos clientes</h1>
+                <div class="divider"></div>
+
+                <div class="container">
+                    <div class="splide" id="clientes_slider">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="./assets/images/arno.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/burguer_king.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/danone.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/estacio.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/natura.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/havaianas.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/tim.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/peg.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/ccaa.jpeg"></li>
+                                <li class="splide__slide"><img src="./assets/images/gbarbosa.jpeg"></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -482,17 +506,7 @@
         <script src="./assets/js/splide.min.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/micromodal.min.js"></script>
-        <script>
-            new Splide('.splide', {
-                type: 'loop',
-                width: '100vw',
-                height: 'calc(100vh - 100px)',
-                pagination: true,
-                perPage: 1,
-                autoplay: true,
-                speed: 3000
-            }).mount();
-        </script>
+        <script src="./assets/js/index.js"></script>
         <script>
             AOS.init();
             MicroModal.init();

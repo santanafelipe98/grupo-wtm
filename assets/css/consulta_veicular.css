@@ -20,3 +20,16 @@
 #consultas .query-icon {
     min-height: auto;
 }
+
+#consulta_veicular_beneficios .check-list .check-list-check {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+#consulta_veicular_beneficios {
+    background-image: url("../images/consulta_veicular_beneficios.png");
+    background-size: auto 100%;
+    background-position: 30vw 5vh;
+    background-repeat: no-repeat;
+    min-height: 700px;
+}

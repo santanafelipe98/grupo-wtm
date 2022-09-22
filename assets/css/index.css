@@ -139,3 +139,12 @@
 .section-scroller {
     top: 120px;
 }
+
+#nossos_clientes {
+    background: #fff;
+    padding-top: 50px;
+}
+
+#clientes_slider img {
+    width: 100px;
+}

@@ -103,9 +103,17 @@
 .card-items li > .card-items-subitems li {
     margin-left: 20px;
     font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .card-item-description {
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.item-price {
+    font-weight: 600;
+    color: #000;
 }

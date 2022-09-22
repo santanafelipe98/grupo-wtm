@@ -12,7 +12,12 @@
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-    transition: transform .3s ease;
+    transition: transform .3s ease, border-color .3s ease;
+    border: 3px solid transparent;
+}
+
+.person-type-card:hover {
+    border-color: var(--secondary-color);
 }
 
 .person-type-card:hover {
