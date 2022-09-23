@@ -17,12 +17,12 @@
         <title>Grupo WTM - Análise de Crédito</title>
     </head>
     <body>
-        <header class="navbar">
+        <header class="navbar navbar-fixed">
             <div class="container">
                 <a href="./index.html" class="brand">
                     <img src="./assets/images/logo.png" alt="Logotipo WTM" srcset="">
                 </a>
-                <nav class="navbar-nav">
+                <nav id="menu" class="navbar-nav">
                     <a href="/" class="nav-link">Home</a>
                     <a href="./index.html#nossas_solucoes" class="nav-link">Soluções</a>
                     <a href="./planos.html" class="nav-link active">Planos</a>
@@ -32,6 +32,9 @@
                     <a href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
                     <a href="#" class="btn btn-secondary">Entrar</a>
                 </div>
+                <button data-target="#menu" class="btn-toggle">
+                    <i class="icon fa-solid fa-bars"></i>
+                </button>
             </div>
         </header>
         <main>
@@ -68,7 +71,8 @@
                                             <ul class="card-items-subitems">
                                                 <li class="card-items-subitem-description">Crednet Top PF <span class="item-price">R$ 15,00</span></li>
                                                 <li class="card-items-subitem-description">Crednet Light PF <span class="item-price">R$ 7,50</span></li>
-                                                <li class="card-items-subitem-description"> Crednet Bureau<span class="item-price">R$ 50,00</span></li>
+                                                <li class="card-items-subitem-description">Achei-recheque <span class="item-price">6,00</span></li>
+                                                <li class="card-items-subitem-description">Crednet Bureau<span class="item-price">R$ 50,00</span></li>
                                                 <li class="card-items-subitem-description">Concentre PF Top Score <span class="item-price">R$ 48,00</span></li>
                                             </ul>
                                         </li>
@@ -77,7 +81,7 @@
                                             <ul class="card-items-subitems">
                                                 <li class="card-items-subitem-description">Crednet Top PJ <span class="item-price">R$ 15,50</span></li>
                                                 <li class="card-items-subitem-description">Crednet Light PJ <span class="item-price">R$ 7,80</span></li>
-                                                <li class="card-items-subitem-description"> Crednet Rating<span class="item-price">R$ 350,00</span></li>
+                                                <li class="card-items-subitem-description">Crednet Rating<span class="item-price">R$ 350,00</span></li>
                                                 <li class="card-items-subitem-description">Concentre PJ Top Score <span class="item-price">R$ 50,00</span></li>
                                                 <li class="card-items-subitem-description">Relato TOP<span class="item-price">R$ 60,00</span></li>
                                             </ul>
@@ -95,6 +99,21 @@
                                                 <li class="card-items-subitem-description">OK Veículo CPF/CNPJ <span class="item-price">R$ 18,90</span></li>
                                                 <li class="card-items-subitem-description">OK Base Nacional <span class="item-price">R$ 20,00</span></li>
                                                 <li class="card-items-subitem-description">Comunicação Eletrônica <span class="item-price">R$ 50,00</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="card-item-description">Recuperação de Recebíveis</div>
+                                            <ul class="card-items-subitems">
+                                                <li class="card-items-subitem-description">Negativação <span class="item-price">25,00</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="card-item-description">Cobrança Eletrônica</div>
+                                            <ul class="card-items-subitems">
+                                                <li class="card-items-subitem-description">Envio de e-mails <span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Envio de WhatsApp <span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Envio de SMS<span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Baixa de título<span class="item-price">10% do valor total</span></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -127,7 +146,8 @@
                                             <ul class="card-items-subitems">
                                                 <li class="card-items-subitem-description">Crednet Top PF <span class="item-price">R$ 14,30</span></li>
                                                 <li class="card-items-subitem-description">Crednet Light PF <span class="item-price">R$ 6,90</span></li>
-                                                <li class="card-items-subitem-description"> Crednet Bureau<span class="item-price">R$ 47,00</span></li>
+                                                <li class="card-items-subitem-description">Achei-recheque <span class="item-price">5,50</span></li>
+                                                <li class="card-items-subitem-description">Crednet Bureau<span class="item-price">R$ 47,00</span></li>
                                                 <li class="card-items-subitem-description">Concentre PF Top Score <span class="item-price">R$ 45,00</span></li>
                                             </ul>
                                         </li>
@@ -136,7 +156,7 @@
                                             <ul class="card-items-subitems">
                                                 <li class="card-items-subitem-description">Crednet Top PJ <span class="item-price">R$ 14,50</span></li>
                                                 <li class="card-items-subitem-description">Crednet Light PJ <span class="item-price">R$ 7,20</span></li>
-                                                <li class="card-items-subitem-description"> Crednet Rating<span class="item-price">R$ 340,00</span></li>
+                                                <li class="card-items-subitem-description">Crednet Rating<span class="item-price">R$ 340,00</span></li>
                                                 <li class="card-items-subitem-description">Concentre PJ Top Score <span class="item-price">R$ 47,00</span></li>
                                                 <li class="card-items-subitem-description">Relato TOP<span class="item-price">R$ 55,00</span></li>
                                             </ul>
@@ -156,7 +176,21 @@
                                                 <li class="card-items-subitem-description">Comunicação Eletrônica <span class="item-price">R$ 45,00</span></li>
                                             </ul>
                                         </li>
-                                        
+                                        <li>
+                                            <div class="card-item-description">Recuperação de Recebíveis</div>
+                                            <ul class="card-items-subitems">
+                                                <li class="card-items-subitem-description">Negativação <span class="item-price">20,00</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="card-item-description">Cobrança Eletrônica</div>
+                                            <ul class="card-items-subitems">
+                                                <li class="card-items-subitem-description">Envio de e-mails <span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Envio de WhatsApp <span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Envio de SMS<span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Baixa de título<span class="item-price">10% do valor total</span></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
 
@@ -188,7 +222,8 @@
                                             <ul class="card-items-subitems">
                                                 <li class="card-items-subitem-description">Crednet Top PF <span class="item-price">R$ 13,50</span></li>
                                                 <li class="card-items-subitem-description">Crednet Light PF <span class="item-price">R$ 6,30</span></li>
-                                                <li class="card-items-subitem-description"> Crednet Bureau<span class="item-price">R$ 38,00</span></li>
+                                                <li class="card-items-subitem-description">Achei-recheque <span class="item-price">4,50</span></li>
+                                                <li class="card-items-subitem-description">Crednet Bureau<span class="item-price">R$ 38,00</span></li>
                                                 <li class="card-items-subitem-description">Concentre PF Top Score <span class="item-price">R$ 40,00</span></li>
                                             </ul>
                                         </li>
@@ -197,7 +232,7 @@
                                             <ul class="card-items-subitems">
                                                 <li class="card-items-subitem-description">Crednet Top PJ <span class="item-price">R$ 13,50</span></li>
                                                 <li class="card-items-subitem-description">Crednet Light PJ <span class="item-price">R$ 6,50</span></li>
-                                                <li class="card-items-subitem-description"> Crednet Rating<span class="item-price">R$ 320,00</span></li>
+                                                <li class="card-items-subitem-description">Crednet Rating<span class="item-price">R$ 320,00</span></li>
                                                 <li class="card-items-subitem-description">Concentre PJ Top Score <span class="item-price">R$ 44,00</span></li>
                                                 <li class="card-items-subitem-description">Relato TOP<span class="item-price">R$ 48,00</span></li>
                                             </ul>
@@ -215,6 +250,21 @@
                                                 <li class="card-items-subitem-description">OK Veículo CPF/CNPJ <span class="item-price">R$ 12,90</span></li>
                                                 <li class="card-items-subitem-description">OK Base Nacional <span class="item-price">R$ 15,00</span></li>
                                                 <li class="card-items-subitem-description">Comunicação Eletrônica <span class="item-price">R$ 35,00</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="card-item-description">Recuperação de Recebíveis</div>
+                                            <ul class="card-items-subitems">
+                                                <li class="card-items-subitem-description">Negativação <span class="item-price">17,00</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="card-item-description">Cobrança Eletrônica</div>
+                                            <ul class="card-items-subitems">
+                                                <li class="card-items-subitem-description">Envio de e-mails <span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Envio de WhatsApp <span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Envio de SMS<span class="item-price"></span></li>
+                                                <li class="card-items-subitem-description">Baixa de título<span class="item-price">10% do valor total</span></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -255,11 +305,10 @@
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
               <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header class="modal__header">
-                    <h1 class="heading-md contact-title">Traga o poder dos dados para a sua empresa e amplie as oportunidades</h1>
+                    <h1 class="heading-md contact-title">Cadastre os dados da sua empresa e nosso time de especialistas entrarão em contato.</h1>
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content">
-                    <p class="contact-description">Informe seus dados e um de nossos especialistas entrará em contato com você.</p>
                     <div class="row">
                         <div id="img_contato_form" class="col-lg-6">
                             <img src="./assets/images/contato_form.jpg" alt="Formulário de Contato">
@@ -276,10 +325,10 @@
                                 <div class="form-group">
                                     <select name="" class="form-control">
                                         <option value="">Selecione o seu plano</option>
-                                        <option value="A">Análise de Crédito</option>
-                                        <option value="B">Recuperação de Recebíveis</option>
-                                        <option value="C">Consulta Veicular</option>
-                                        <option value="D">Cobrança Eletrônica</option>
+                                        <option value="A">R$ 50,00 - Básico</option>
+                                        <option value="B">R$ 130,00 - Intermediário</option>
+                                        <option value="C">R$ 200,00 - Profissional</option>
+                                        <option value="D">Personalizado</option>
                                     </select>
                                 </div>
         
@@ -317,7 +366,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <p class="text-center text-white">Grupo WTM - Soluções Empresariais. <br>© 2022.</p>
+                        <p class="text-center text-white copyright">Grupo WTM - Soluções Empresariais. <br>© 2022.</p>
                     </div>
                     <div class="col-lg-3">
                         <div class="social-media">
@@ -329,16 +378,6 @@
                 </div>
             </div>
         </footer>
-
-        <div class="section-scroller">
-            <nav class="section-nav">
-                <a href="./index.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-home"></i></span>
-                    <span class="title">Home</span>
-                </a>
-            </nav>
-            <div class="scrollbar"></div>
-        </div>
         
         <a href="https://wa.me/5571992041000?text=Preciso%20de%20um%20atendimento." target="_blank" class="whatsapp-btn">
             <i class="fab fa-whatsapp"></i>
@@ -347,6 +386,7 @@
         <script src="./assets/js/jquery.min.js"></script>
         <script src="./assets/js/micromodal.min.js"></script>
         <script src="./assets/js/aos.js"></script>
+        <script src="./assets/js/header.js"></script>
         <script>
             AOS.init();
             MicroModal.init();

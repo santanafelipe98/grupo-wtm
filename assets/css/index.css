@@ -148,3 +148,72 @@
 #clientes_slider img {
     width: 100px;
 }
+
+@media screen and (max-width: 1199.98px) {
+    #como_funciona .step-thumbnail img {
+        width: 50%;
+    }
+
+    #como_funciona .step {
+        margin-bottom: 35px;
+    }
+
+    #como_funciona .step-body {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .query-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 991.68px) {
+    #como_funciona .step::after {
+        width: 0;
+        height: 0;
+        border: none;
+    }
+    
+    #img_consultas {
+        width: 100%;
+    }
+
+    .big-number {
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    #indicadores .section-title {
+        font-size: 42px;
+    }
+    
+    #lista_indicadores {
+        list-style-type: none;
+    }
+    
+    #lista_indicadores {
+        font-size: 26px;
+    }
+    
+}
+
+@media screen and (max-width: 767.98px) {
+    #servicos .service {
+        text-align: center;
+    }
+
+    .big-number {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    #indicadores .section-title {
+        font-size: 36px;
+    }
+    
+    #lista_indicadores {
+        list-style-type: none;
+        font-size: 22px;
+    }
+}

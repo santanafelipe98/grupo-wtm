@@ -17,12 +17,12 @@
         <title>Grupo WTM - Home</title>
     </head>
     <body>
-        <header class="navbar">
+        <header id="main_navbar" class="navbar navbar-fixed">
             <div class="container">
                 <a href="./index.html" class="brand">
                     <img src="./assets/images/logo.png" alt="Logotipo WTM">
                 </a>
-                <nav class="navbar-nav">
+                <nav id="menu" class="navbar-nav">
                     <a href="/" class="nav-link active">Home</a>
                     <a href="#nossas_solucoes" class="nav-link">Soluções</a>
                     <a href="./planos.html" class="nav-link">Planos</a>
@@ -32,6 +32,9 @@
                     <a href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
                     <a href="#" class="btn btn-secondary">Entrar</a>
                 </div>
+                <button data-target="#menu" class="btn-toggle">
+                    <i class="icon fa-solid fa-bars"></i>
+                </button>
             </div>
         </header>
         <main>
@@ -41,10 +44,10 @@
                           <ul class="splide__list">
                               <li class="splide__slide">
                                 <div id="slide_inicial" class="solution-slide">
-                                    <h1 class="heading-lg text-white text-center">Possuímos as melhores soluções financeiras!</h1>
+                                    <h1 class="heading-lg text-white text-center">Solução completa para sua empresa!</h1>
 
                                     <p class="text-white text-center">
-                                        Com uma plataforma digital especializada em análise de crédito, consultas veiculares, gestão de recebíveis e cobrança de devedores.
+                                        Plataforma digital especializada em análise de crédito, consultas veiculares, gestão de recebíveis e cobrança de devedores.
                                     </p>
                                 </div>
                               </li>
@@ -64,7 +67,7 @@
                                     <h1 class="heading-lg text-white text-center">Recuperação de Recebíveis</h1>
 
                                     <p class="text-white text-center">
-                                        Otimize e automatize sua recuperação de credito com a WTM de forma clara, simples e eficaz. Nossos processos são 100% online, o que facilita na hora de realizar a inclusão do seu devedor no maior orgão de proteção de crédito, o Serasa.
+                                        Otimize e automatize a recuperação de créditos da sua empresa, de forma clara, simples e eficaz. Nossos processos são 100% online, o que facilita na hora de realizar a inclusão e a baixa de título do maior banco de dados da América Latina.
                                     </p>
 
                                     <a href="./recuperacao_de_recebiveis.html" class="btn btn-secondary btn-lg">Saiba mais</a>
@@ -75,7 +78,7 @@
                                     <h1 class="heading-lg text-white text-center">Consulta Veicular</h1>
 
                                     <p class="text-white text-center">
-                                        Evite prejuisos e realize a consulta veicular conosco. Possuimos uma das maiores base de dados do Brasil que proporciona uma negociação mais segura na compra do veículo usado.
+                                        Nossas soluções oferecem gestão de risco, redução de inadimplência e possibilidade de prevenção a fraudes.
                                     </p>
 
                                     <a href="./consulta_veicular.html" class="btn btn-secondary btn-lg">Saiba mais</a>
@@ -87,7 +90,7 @@
                                     <h1 class="heading-lg text-white text-center">Cobrança Eletrônica</h1>
 
                                     <p class="text-white text-center">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cumque quae rerum in maxime facere labore atque quod voluptatum.
+                                        Solução completa para recuperação de títulos vencidos via e-mail, SMS e WhatsApp. Automatize suas cobranças em poucos cliques e reduza sua taxa de inadimplência em até 70%. Tenha sua equipe financeira com mais tempo livre para atividades que não são tão operacionais.
                                     </p>
 
                                     <a href="./cobranca_eletronica.html" class="btn btn-secondary btn-lg">Saiba mais</a>
@@ -104,7 +107,7 @@
                 </h1>
                 <div class="container">
                     <div class="row mt-5">
-                        <div class="col-lg-3" data-aos="fade-up">
+                        <div class="col-lg-6 col-xl-3" data-aos="fade-up">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-thumbnail">
@@ -121,7 +124,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-thumbnail">
@@ -138,7 +141,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                        <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="600">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-thumbnail">
@@ -156,7 +159,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="900">
+                        <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="900">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-thumbnail">
@@ -184,7 +187,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-6 col-xl-3">
 
                             <div class="step"> <!-- Análise de Crédito -->
                                 <div class="step-header">
@@ -202,7 +205,7 @@
 
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-6 col-xl-3">
                             
                             <div class="step"> <!-- Recuperação de Recebíveis -->
                                 <div class="step-header">
@@ -213,14 +216,14 @@
                                 <div class="step-body">
                                     <div class="step-number">2</div>
                                     <div class="step-text">
-                                        <div class="step-title">Cadastre os dados da sua empresa.</div>
+                                        <div class="step-title">Preencha os dados da sua empresa</div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-6 col-xl-3">
                             
                             <div class="step"> <!-- Análise de Crédito -->
                                 <div class="step-header">
@@ -231,14 +234,14 @@
                                 <div class="step-body">
                                     <div class="step-number">3</div>
                                     <div class="step-text">
-                                        <div class="step-title">Um especialista entrará em contato.</div>
+                                        <div class="step-title">Aguarde a liberação em análise de seu crédito.</div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-6 col-xl-3">
                             
                             <div class="step"> <!-- Análise de Crédito -->
                                 <div class="step-header">
@@ -249,7 +252,7 @@
                                 <div class="step-body">
                                     <div class="step-number">4</div>
                                     <div class="step-text">
-                                        <div class="step-title">Seu cadastro já será liberado.</div>
+                                        <div class="step-title">Login de acesso liberado.</div>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +268,7 @@
 
                     <div class="row mt-5">
 
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div class="service">
                                 <div class="service-icon">
                                     <i class="fas fa-search"></i>
@@ -276,7 +279,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div class="service">
                                 <div class="service-icon">
                                     <i class="fas fa-list"></i>
@@ -287,7 +290,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div class="service">
                                 <div class="service-icon">
                                     <i class="fas fa-user-minus"></i>
@@ -298,7 +301,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div class="service">
                                 <div class="service-icon">
                                     <i class="fas fa-shield"></i>
@@ -397,41 +400,15 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.80343872618425!2d-38.31251595774301!3d-12.88128507280299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163e0123c63abb%3A0x523039cc10eebb39!2sR.%20Itagib%C3%A1%2C%20110%20-%20Pitangueiras%2C%20Lauro%20de%20Freitas%20-%20BA%2C%2042701-350!5e0!3m2!1spt-BR!2sbr!4v1663723816201!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </main>
-        <div class="section-scroller">
-            <nav class="section-nav">
-                <a href="./analise_de_credito.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-search"></i></span>
-                    <span class="title">Análise de Crédito</span>
-                </a>
-                <a href="./recuperacao_de_recebiveis.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-calculator"></i></span>
-                    <span class="title">Recuperação de Recebíveis</span>
-                </a>
-                <a href="./consulta_veicular.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-car"></i></span>
-                    <span class="title">Consulta Veicular</span>
-                </a>
-                <a href="./cobranca_eletronica.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-file-invoice-dollar"></i></span>
-                    <span class="title">Cobrança Eletrônica</span>
-                </a>
-                <a href="#" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-dollar"></i></span>
-                    <span class="title">Planos</span>
-                </a>
-            </nav>
-            <div class="scrollbar"></div>
-        </div>
 
         <div class="modal micromodal-slide" id="contato_form" aria-hidden="true"> <!-- Contato -->
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
               <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header class="modal__header">
-                    <h1 class="heading-md contact-title">Traga o poder dos dados para a sua empresa e amplie as oportunidades</h1>
+                    <h1 class="heading-md contact-title">Cadastre os dados da sua empresa e nosso time de especialistas entrarão em contato.</h1>
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content">
-                    <p class="contact-description">Informe seus dados e um de nossos especialistas entrará em contato com você.</p>
                     <div class="row">
                         <div id="img_contato_form" class="col-lg-6">
                             <img src="./assets/images/contato_form.jpg" alt="Formulário de Contato">
@@ -448,10 +425,10 @@
                                 <div class="form-group">
                                     <select name="" class="form-control">
                                         <option value="">Selecione o seu plano</option>
-                                        <option value="A">Análise de Crédito</option>
-                                        <option value="B">Recuperação de Recebíveis</option>
-                                        <option value="C">Consulta Veicular</option>
-                                        <option value="D">Cobrança Eletrônica</option>
+                                        <option value="A">R$ 50,00 - Básico</option>
+                                        <option value="B">R$ 130,00 - Intermediário</option>
+                                        <option value="C">R$ 200,00 - Profissional</option>
+                                        <option value="D">Personalizado</option>
                                     </select>
                                 </div>
         
@@ -479,6 +456,7 @@
               </div>
             </div>
         </div>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -488,7 +466,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                        <p class="text-center text-white">Grupo WTM - Soluções Empresariais. <br>© 2022.</p>
+                        <p class="text-center text-white copyright">Grupo WTM - Soluções Empresariais. <br>© 2022.</p>
                     </div>
                     <div class="col-lg-3 d-flex align-items-center justify-content-center">
                         <div class="social-media">
@@ -509,6 +487,7 @@
         <script src="./assets/js/splide.min.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/micromodal.min.js"></script>
+        <script src="./assets/js/header.js"></script>
         <script src="./assets/js/index.js"></script>
         <script>
             AOS.init();

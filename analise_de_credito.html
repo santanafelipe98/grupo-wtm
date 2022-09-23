@@ -18,12 +18,12 @@
         <title>Grupo WTM - Análise de Crédito</title>
     </head>
     <body>
-        <header class="navbar">
+        <header class="navbar navbar-fixed">
             <div class="container">
                 <a href="./index.html" class="brand">
                     <img src="./assets/images/logo.png" alt="Logotipo WTM" srcset="">
                 </a>
-                <nav class="navbar-nav">
+                <nav id="menu" class="navbar-nav">
                     <a href="/" class="nav-link active">Home</a>
                     <a href="./index.html#nossas_solucoes" class="nav-link">Soluções</a>
                     <a href="./planos.html" class="nav-link">Planos</a>
@@ -33,6 +33,9 @@
                     <a href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
                     <a href="#" class="btn btn-secondary">Entrar</a>
                 </div>
+                <button data-target="#menu" class="btn-toggle">
+                    <i class="icon fa-solid fa-bars"></i>
+                </button>
             </div>
         </header>
         <main>
@@ -78,7 +81,7 @@
 
                     <div class="row justify-content-center">
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-6 col-xl-2">
                             <div class="query-card">
                                 <div class="query-card-header">
                                     <div class="query-title">Crednet Light PF</div>
@@ -92,7 +95,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-6 col-xl-2">
                             <div class="query-card">
                                 <div class="query-card-header">
                                     <div class="query-title">Crednet TOP PF</div>
@@ -106,7 +109,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-6 col-xl-2">
                             <div class="query-card">
                                 <div class="query-card-header">
                                     <div class="query-title">Achei-recheque PF</div>
@@ -120,7 +123,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-6 col-xl-2">
                             <div class="query-card">
                                 <div class="query-card-header">
                                     <div class="query-title">Concentre PF Top Score</div>
@@ -134,7 +137,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-md-12 col-xl-2">
                             <div class="query-card">
                                 <div class="query-card-header">
                                     <div class="query-title">Credit Bureau</div>
@@ -707,11 +710,10 @@
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
               <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header class="modal__header">
-                    <h1 class="heading-md contact-title">Traga o poder dos dados para a sua empresa e amplie as oportunidades</h1>
+                    <h1 class="heading-md contact-title">Cadastre os dados da sua empresa e nosso time de especialistas entrarão em contato.</h1>
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content">
-                    <p class="contact-description">Informe seus dados e um de nossos especialistas entrará em contato com você.</p>
                     <div class="row">
                         <div id="img_contato_form" class="col-lg-6">
                             <img src="./assets/images/contato_form.jpg" alt="Formulário de Contato">
@@ -728,10 +730,10 @@
                                 <div class="form-group">
                                     <select name="" class="form-control">
                                         <option value="">Selecione o seu plano</option>
-                                        <option value="A">Análise de Crédito</option>
-                                        <option value="B">Recuperação de Recebíveis</option>
-                                        <option value="C">Consulta Veicular</option>
-                                        <option value="D">Cobrança Eletrônica</option>
+                                        <option value="A">R$ 50,00 - Básico</option>
+                                        <option value="B">R$ 130,00 - Intermediário</option>
+                                        <option value="C">R$ 200,00 - Profissional</option>
+                                        <option value="D">Personalizado</option>
                                     </select>
                                 </div>
         
@@ -759,6 +761,10 @@
               </div>
             </div>
         </div>
+        
+        <a href="https://wa.me/5571992041000?text=Preciso%20de%20um%20atendimento." target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 
         <footer>
             <div class="container">
@@ -769,7 +775,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <p class="text-center text-white">Grupo WTM - Soluções Empresariais. <br>© 2022.</p>
+                        <p class="text-center text-white copyright">Grupo WTM - Soluções Empresariais. <br>© 2022.</p>
                     </div>
                     <div class="col-lg-3">
                         <div class="social-media">
@@ -782,35 +788,11 @@
             </div>
         </footer>
 
-        <div class="section-scroller">
-            <nav class="section-nav">
-                <a href="./index.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-home"></i></span>
-                    <span class="title">Home</span>
-                </a>
-                <a href="./recuperacao_de_recebiveis.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-calculator"></i></span>
-                    <span class="title">Recuperação de Recebíveis</span>
-                </a>
-                <a href="./consulta_veicular.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-car"></i></span>
-                    <span class="title">Consulta Veicular</span>
-                </a>
-                <a href="./cobranca_eletronica.html" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-file-invoice-dollar"></i></span>
-                    <span class="title">Cobrança Eletrônica</span>
-                </a>
-                <a href="#" class="section-nav-link">
-                    <span class="icon"><i class="fas fa-dollar"></i></span>
-                    <span class="title">Planos</span>
-                </a>
-            </nav>
-            <div class="scrollbar"></div>
-        </div>
         <script src="./assets/js/jquery.min.js"></script>
         <script src="./assets/js/micromodal.min.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/analise_de_credito.js"></script>
+        <script src="./assets/js/header.js"></script>
         <script>
             AOS.init();
             MicroModal.init();

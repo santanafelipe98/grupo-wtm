@@ -57,6 +57,12 @@
     min-height: 700px;
 }
 
+#analise_de_credito_beneficios .check-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 #banner_principal {
     background-image: linear-gradient(180deg,rgb(25, 39, 46, .8) 59%,var(--primary-color)), url("../images/banner_principal.png");
     background-size: cover;
@@ -78,4 +84,42 @@
 #banner_principal p {
     width: 80%;
     text-align: center;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .queries .query-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .person-type-card {
+        margin-bottom: 20px; 
+    }
+
+    #analise_de_credito_beneficios {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #analise_de_credito_beneficios h1 {
+        text-align: center !important;
+    }
+
+    #banner_principal {
+        min-height: auto;
+        padding: 50px 0;
+    }
+
+    #banner_principal #logo {
+        width: 120px;
+        margin-bottom: 30px;
+    }
+    
+    #banner_principal p {
+        width: 80%;
+        font-size: 16px;
+        text-align: center;
+    }
 }

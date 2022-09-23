@@ -46,3 +46,25 @@
     padding-top: 50px;
     padding-bottom: 0;
 }
+
+#recuperacao_de_recebiveis_beneficios .check-list-item {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 767.98px) {
+    #porque_negativar .service {
+        text-align: center;
+    }
+
+    #solucoes .solution-card {
+        margin-bottom: 30px;
+    }
+
+    #recuperacao_de_recebiveis_beneficios .benefits_list {
+        font-size: 16px;
+    }
+
+    #observacoes .items-list {
+        font-size: 16px;
+    }
+}
