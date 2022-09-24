@@ -26,6 +26,8 @@
                     <a href="./index.html#nossas_solucoes" class="nav-link">Soluções</a>
                     <a href="./planos.html" class="nav-link">Planos</a>
                     <a href="./contato.html" class="nav-link active">Contato</a>
+                    <a id="btn_seja_cliente" href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
+                    <a id="btn_entrar" href="#" class="btn btn-secondary">Entrar</a>
                 </nav>
                 <div class="side-buttons">
                     <a href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
@@ -40,59 +42,66 @@
             <section
                 id="contato_header"
                 class="page-header d-flex flex-column justify-content-center align-items-center">
-                <h1 class="text-white text-center">Você quer saber como nós podemos fazer sua empresa crescer?</h1>
-                <p class="text-white text-center">Fale com um especialista agora por meio dos nossos canais de atendimento.</p>
+                <h1 class="text-white text-center" data-aos="fade-up">Você quer saber como nós podemos fazer sua empresa crescer?</h1>
+                <p class="text-white text-center" data-aos="fade-up" data-aos-delay="300">Fale com um especialista agora por meio dos nossos canais de atendimento.</p>
             </section>
 
             <section
                 id="secao_contato"
-                class="section">
+                class="page-section">
                 
                 <div class="container">
-
-                    <div class="row">
-                        
-                        <div class="col-lg-4">
-                            <div class="contact-card"> <!-- Card de contato -->
-                                <i class="fab fa-whatsapp contact-icon"></i>
-
-                                <h2 class="contact-title">Converse pelo WhatsApp</h2>
-
-                                <div class="contact-text">
-                                    <a href="https://wa.me/5571992041000?text=Preciso%20de%20um%20atendimento." target="_blank">+55 (71) 9 9204-1000</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="contact-card"> <!-- Card de contato -->
-                                <i class="fas fa-envelope contact-icon"></i>
-
-                                <h2 class="contact-title">Envie um e-mail</h2>
-
-                                <div class="contact-text">
-                                    <a href="mail:comercial@grupowtm.com.br">comercial@grupowtm.com.br</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="contact-card"> <!-- Card de contato -->
-                                <i class="far fa-message contact-icon"></i>
-
-                                <h2 class="contact-title">Envie uma mensagem</h2>
-
-                                <div class="contact-text">Nós retornaremos assim que possível!</div>
-                            </div>
-                        </div>
-
-                    </div>
                     
+                    <div id="contato_whatsapp" class="contact row d-flex justify-content-center">
+                        <div class="col-md-6 col-lg-4 d-flex align-items-center" data-aos="fade-right">
+                            <img class="contact-img" src="./assets/images/whatsapp.png" alt="WhatsApp">
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex align-items-center" data-aos="fade-left">
+                            <div class="contact-card">
+                                <h2>Converse pelo WhatsApp</h2>
+                                <a href="https://wa.me/5571992041000?text=Preciso%20de%20um%20atendimento." target="_blank">+55 (71) 9 9204-1000</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contato_email" class="row contact">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-right">
+                            <div class="contact-card">
+                                <h2>Envie um e-mail</h2>
+                                <a href="https://wa.me/5571992041000?text=Preciso%20de%20um%20atendimento." target="_blank">comercial@grupowtm.com.br</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-left">
+                            <img class="contact-img" src="./assets/images/email.png" alt="E-mail">
+                        </div>
+                    </div>
+
+                    <div id="contato_mensagem" class="row d-flex justify-content-end contact" data-aos="fade-right">
+                        <div class="col-md-6 col-lg-4 d-flex align-items-center">
+                            <img class="contact-img" src="./assets/images/chat.png" alt="Chat">
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex align-items-center" data-aos="fade-left">
+                            <div class="contact-card">
+                                <h2><a href="javascript:void(Tawk_API.toggle())">Envie uma mensagem</a></h2>
+                                <p>Nós retornaremos assim que possível!</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </section>
 
         </main>
+
+        <div class="arrows">
+            <button id="arrow_up" class="arrow">
+                <i class="fas fa-angle-up"></i>
+            </button>
+            <button id="arrow_down" class="arrow">
+                <i class="fas fa-angle-down"></i>
+            </button>
+        </div>
 
         <div class="modal micromodal-slide" id="contato_form" aria-hidden="true"> <!-- Contato -->
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -179,6 +188,7 @@
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/micromodal.min.js"></script>
         <script src="./assets/js/header.js"></script>
+        <script src="./assets/js/arrows.js"></script>
         <script>
             AOS.init();
             MicroModal.init();

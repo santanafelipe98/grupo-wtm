@@ -27,6 +27,8 @@
                     <a href="./index.html#nossas_solucoes" class="nav-link">Soluções</a>
                     <a href="./planos.html" class="nav-link active">Planos</a>
                     <a href="./contato.html" class="nav-link">Contato</a>
+                    <a id="btn_seja_cliente" href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
+                    <a id="btn_entrar" href="#" class="btn btn-secondary">Entrar</a>
                 </nav>
                 <div class="side-buttons">
                     <a href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
@@ -47,7 +49,7 @@
                 <div class="container-fluid">
 
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div id="plano_basico" class="plan-card"> <!-- Card de Planos -->
                                 <div class="plan-card-header">
                                     <div class="plan-card-content-top">
@@ -122,7 +124,7 @@
                                 <a href="#1" data-micromodal-trigger="contato_form" class="btn btn-danger">Contratar</a>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div id="plano_intermediario" class="plan-card"> <!-- Card de Planos -->
                                 <div class="plan-card-header">
                                     <div class="plan-card-content-top">
@@ -197,7 +199,7 @@
                                 <a href="#2" data-micromodal-trigger="contato_form" class="btn btn-warning">Contratar</a>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div id="plano_profissional" class="plan-card"> <!-- Card de Planos -->
                                 <div class="plan-card-header">
                                     <div class="plan-card-content-top">
@@ -273,7 +275,7 @@
                                 <a href="#3" data-micromodal-trigger="contato_form" class="btn btn-success">Contratar</a>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-6 col-lg-3">
                             <div id="plano_personalizado" class="plan-card"> <!-- Card de Planos -->
                                 <div class="plan-card-header">
                                     <div class="plan-card-content-top">
@@ -300,6 +302,15 @@
                 </div>
             </section>
         </main>
+
+        <div class="arrows">
+            <button id="arrow_up" class="arrow">
+                <i class="fas fa-angle-up"></i>
+            </button>
+            <button id="arrow_down" class="arrow">
+                <i class="fas fa-angle-down"></i>
+            </button>
+        </div>
 
         <div class="modal micromodal-slide" id="contato_form" aria-hidden="true"> <!-- Contato -->
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -387,6 +398,7 @@
         <script src="./assets/js/micromodal.min.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/header.js"></script>
+        <script src="./assets/js/arrows.js"></script>
         <script>
             AOS.init();
             MicroModal.init();

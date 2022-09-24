@@ -18,8 +18,6 @@ function responsive(width) {
 $(function() {
     const width = $(window).innerWidth();
     responsive(width);
-
-    menuOpacity();
 });
 
 $(window).on('resize', function() {

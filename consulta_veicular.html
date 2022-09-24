@@ -28,6 +28,8 @@
                     <a href="./index.html#nossas_solucoes" class="nav-link">Soluções</a>
                     <a href="./planos.html" class="nav-link">Planos</a>
                     <a href="./contato.html" class="nav-link">Contato</a>
+                    <a id="btn_seja_cliente" href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
+                    <a id="btn_entrar" href="#" class="btn btn-secondary">Entrar</a>
                 </nav>
                 <div class="side-buttons">
                     <a href="#" data-micromodal-trigger="contato_form" class="btn btn-info me-2">Seja Cliente</a>
@@ -190,7 +192,7 @@
                                         <div class="query-icon">
                                             <img src="./assets/images/comunicacao_venda.png" alt="Comunicação de Venda" srcset="">
                                         </div>
-                                        <button href="#" class="btn btn-secondary" data-micromodal-trigger="modal_credit_rating_pf">Saiba mais</button>
+                                        <button href="#" class="btn btn-secondary" data-micromodal-trigger="modal_comunicacao_venda">Saiba mais</button>
                                     </div>
                                 </div>
                             </div>
@@ -613,7 +615,52 @@
                 </div>
             </div>
 
+            <div class="query-modal modal micromodal-slide" id="modal_comunicacao_venda" aria-hidden="true"> <!-- OK Comunicação de Venda  -->
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <div class="query-modal-icon">
+                            <img src="./assets/images/comunicacao_venda.png" alt="Comunicação de Venda">
+                        </div>
+                        <h2 class="modal__title" id="modal-1-title">
+                            Comunicação de Venda
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content">
+                      <p class="text-center mb-3">
+                        Essa consulta disponibiliza as seguintes informações:
+                      </p>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Incluão de comunicado.</li>
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Cancelamento de comunicado.</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="query-modal-items">
+                                <li><i class="fas fa-check-circle query-item-icon"></i>Extrato de comunicados.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+            </div>
+
         </main>
+
+        <div class="arrows">
+            <button id="arrow_up" class="arrow">
+                <i class="fas fa-angle-up"></i>
+            </button>
+            <button id="arrow_down" class="arrow">
+                <i class="fas fa-angle-down"></i>
+            </button>
+        </div>
 
         <div class="modal micromodal-slide" id="contato_form" aria-hidden="true"> <!-- Contato -->
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -700,6 +747,7 @@
         <script src="./assets/js/micromodal.min.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/header.js"></script>
+        <script src="./assets/js/arrows.js"></script>
         <script>
             AOS.init();
             MicroModal.init();
