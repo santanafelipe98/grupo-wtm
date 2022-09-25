@@ -426,33 +426,44 @@
                         </div>
 
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
-                            <form>
+                            <form id="contato_form">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nome Completo">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="name"
+                                        name="name"
+                                        title="name"
+                                        placeholder="Nome Completo">
+                                    <span id="name_error" class="invalid-feedback"></label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="E-mail">
+                                    <input id="email" type="email" name="email" title="email" class="form-control" placeholder="E-mail">
+                                    <span id="email_error" class="invalid-feedback"></span>
                                 </div>
                                 <div class="form-group">
-                                    <select name="" class="form-control">
+                                    <select id="plan" name="plan" id="plan" class="form-control">
                                         <option value="">Selecione o seu plano</option>
                                         <option value="A">R$ 50,00 - Básico</option>
                                         <option value="B">R$ 130,00 - Intermediário</option>
                                         <option value="C">R$ 200,00 - Profissional</option>
                                         <option value="D">Personalizado</option>
                                     </select>
+                                    <span id="plan_error" class="invalid-feedback"></span>
                                 </div>
         
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Celular">
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Celular">
+                                            <span id="phone_error" class="invalid-feedback"></span>
                                         </div>
                                     </div>
         
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="CPF ou CNPJ">
+                                            <input type="text" class="form-control" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF ou CNPJ">
+                                            <span id="cpf_cnpj_error" class="invalid-feedback"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -495,12 +506,14 @@
         </a>
     
         <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/jquery.mask.min.js"></script>
         <script src="./assets/js/splide.min.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/micromodal.min.js"></script>
         <script src="./assets/js/header.js"></script>
         <script src="./assets/js/arrows.js"></script>
         <script src="./assets/js/index.js"></script>
+        <script src="./assets/js/contact_form.js"></script>
         <script>
             AOS.init();
             MicroModal.init();

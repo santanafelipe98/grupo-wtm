@@ -891,6 +891,10 @@ footer .container .col-lg-6 {
     display: none;
 }
 
+.invalid-feedback {
+    font-size: 12px !important;
+}
+
 @media screen and (max-width: 1199px) {
     #menu,
     .side-buttons {
