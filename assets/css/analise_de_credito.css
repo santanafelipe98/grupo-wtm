@@ -64,7 +64,7 @@
 }
 
 #banner_principal {
-    background-image: linear-gradient(180deg,rgb(25, 39, 46, .8) 59%,var(--primary-color)), url("../images/banner_principal.png");
+    background-image: linear-gradient(180deg,rgb(25, 39, 46, .8) 59%,var(--primary-color)), url("../images/banner_principal.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
